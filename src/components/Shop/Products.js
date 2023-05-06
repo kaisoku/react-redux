@@ -1,3 +1,5 @@
+import React from "react";
+
 import ProductItem from "./ProductItem";
 import classes from "./Products.module.css";
 
@@ -15,7 +17,7 @@ const DUMMY_PRODUCTS = [
     description: "This book is about C++ programming",
   },
 ];
-const Products = (props) => {
+const Products = () => {
   return (
     <section className={classes.products}>
       <h2>Buy your favorite products</h2>

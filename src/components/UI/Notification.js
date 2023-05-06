@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import React from "react";
 import classes from "./Notification.module.css";
 
 const Notification = (props) => {

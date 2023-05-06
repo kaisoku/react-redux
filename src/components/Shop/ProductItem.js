@@ -1,4 +1,7 @@
+/* eslint-disable react/prop-types */
+import React from "react";
 import { useDispatch } from "react-redux";
+
 import Card from "../UI/Card";
 import classes from "./ProductItem.module.css";
 import { cartActions } from "../../store/cart-slice";

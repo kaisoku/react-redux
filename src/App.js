@@ -1,9 +1,9 @@
+import React, { Fragment, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import Cart from "./components/Cart/Cart";
 import Layout from "./components/Layout/Layout";
 import Products from "./components/Shop/Products";
-import { Fragment, useEffect } from "react";
 import { uiActions } from "./store/ui-slice";
 import Notification from "./components/UI/Notification";
 
@@ -55,7 +55,7 @@ function App() {
         uiActions.showNotification({
           status: "error",
           title: "Error!",
-          message: "Sending Cart Data failed",
+          message: "Sending Cart Data failed" + err.message,
         })
       );
     });
